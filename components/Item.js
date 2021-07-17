@@ -2,10 +2,10 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
 import Content from './Content';
 
-export default function Item({feature}) {
+export default function Item({feature, setPosition, moveItem,}) {
     const [isOpen, setIsOpen] = useState(false);
     const toggleOpen = () => setIsOpen(!isOpen);
-  
+
     return (
         <motion.button 
             layout onClick={toggleOpen} initial={{ borderRadius: 10 }}
