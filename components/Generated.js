@@ -10,8 +10,8 @@ export default class Generated extends React.Component {
         copied: false,
       };
 
-      render() {
-          return (
+    render() {
+        return (
             <>
                 <div className="relative p-6 my-4 w-full rounded border-b-4 border-red-500 dark:border-red-800 bg-gray-100 dark:bg-gray-800">
                     <div className="font-bold text-gray-800 dark:text-gray-100 mr-4 overflow-hidden" >
@@ -21,10 +21,16 @@ export default class Generated extends React.Component {
                     <CopyToClipboard  
                         text={this.state.value}
                         onCopy={() => this.setState({copied: true})}>
-                            <button className="font-bold absolute w-5 h-10 text-gray-400 right-3 top-3 dark:text-gray-300" >
+                            <button className="font-bold absolute w-5 h-10 text-gray-400 right-3 top-3 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-800" >
                                 <MdContentCopy />
                             </button>
                     </CopyToClipboard >
+                </div>
+
+                <div className="relative p-6 my-4 w-full rounded bg-gray-100 dark:bg-gray-800">
+                    <div className="text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100 text-left">
+                        Customize your password
+                    </div>
                 </div>
             </>
         )
