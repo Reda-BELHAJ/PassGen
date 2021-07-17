@@ -1,6 +1,7 @@
 import React from 'react';
 import {MdContentCopy} from 'react-icons/md'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import NymberInput from './NymberInput'
 
 export default class Generated extends React.Component {
     password = 'Nl6v2V*9FW%7sdoO4&c0kUiAgR%'
@@ -28,9 +29,10 @@ export default class Generated extends React.Component {
                 </div>
 
                 <div className="relative p-6 my-4 w-full rounded bg-gray-100 dark:bg-gray-800">
-                    <div className="text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100 text-left">
+                    <div className="text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100 text-left mb-4">
                         Customize your password
                     </div>
+                    <NymberInput value="" />
                 </div>
             </>
         )

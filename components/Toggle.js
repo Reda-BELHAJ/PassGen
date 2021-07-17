@@ -12,7 +12,7 @@ const Toggle = () => {
 
     const toggleTheme = () => {
         if (isMounted) {
-        setTheme(theme === "light" ? "dark" : "light");
+          setTheme(theme === "light" ? "dark" : "light");
         }
     };
 
