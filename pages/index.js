@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Hero from '../layouts/Hero'
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="bg-white dark:bg-gray-900">
         <div className="min-h-screen relative">
           <Navbar />
+          <Hero />
           <Footer />
         </div>
       </div>
