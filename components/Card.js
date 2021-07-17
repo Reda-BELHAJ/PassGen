@@ -5,12 +5,12 @@ const Card = () => {
         <>
             <div className="border border-red-200 rounded p-6 my-4 w-full dark:border-gray-800 bg-red-50 dark:bg-red-opaque">
                 <p className="text-lg md:text-xl font-bold text-gray-900 dark:text-gray-100">
-                    🤔 What does PassGen stand for?
+                    🤔 What does PassGen stands for?
                 </p>
-                <p className="my-1 text-gray-800 dark:text-gray-200">
+                <p className="my-1 text-gray-800 dark:text-gray-200 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                      Maecenas eleifend, urna at faucibus malesuada, ligula ex
-                     rutrum nibh, ac consectetur urna lorem vitae erat
+                     rutrum nibh, ac consectetur urna lorem vitae erat.
                 </p>
             </div>
         </>
