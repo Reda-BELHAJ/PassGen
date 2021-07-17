@@ -21,7 +21,7 @@ export const features = [
     },
     {
         id: 4,
-        title: '🔀 Generate randomly your password',
+        title: '✨ Want to contribute?',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend, urna at faucibus malesuada, ligula ex rutrum nibh, ac consectetur urna lorem vitae erat.'
     },
 ]
