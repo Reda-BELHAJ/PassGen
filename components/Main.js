@@ -11,9 +11,8 @@ const Main = () => {
                     Generate a Secure Password
                 </h1>
             </div>
-            <div className="p-6 my-4 w-full rounded bg-gray-100 dark:bg-gray-800">
-                <Generated />
-            </div>
+
+            <Generated />
         </>
     )
 }
