@@ -6,7 +6,7 @@ import Toggle from './Toggle';
 const Navbar = () => {
     return (
         <>
-            <header className="fixed w-full border-t-4 bg-gray-100 dark:bg-gray-800 border-red-700 dark:border-red-800 shadow dark:shadow-2 z-50">
+            <header className="fixed w-full border-t-4 bg-gray-100 dark:bg-gray-800 border-red-500 dark:border-red-800 shadow dark:shadow-2 z-50">
                 <div className="container max-w-4xl mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
                         <div>
