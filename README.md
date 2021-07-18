@@ -1,5 +1,16 @@
 # PassGen
 
+PassGen or Password Generator is a software that generates random or personalized passwords for users. It assists users in creating stronger passwords that are more secure for a certain sort of access.
+
+## Built Using
+
+- [Next.js](https://nextjs.org/)
+- [Vercel](https://vercel.com)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Frame Motion](https://www.framer.com/motion/)
+
+For others plugins and dependencies take a look at [package.json](package.json) 
+
 ## Setup
 
 Get the code by either cloning this repository using git
@@ -27,3 +38,5 @@ or with yarn
 ```
 yarn dev
 ```
+
+The app should now be up and running at http://localhost:3000 🚀
