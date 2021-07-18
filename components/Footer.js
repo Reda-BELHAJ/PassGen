@@ -1,6 +1,7 @@
 import { SiTwitter, SiGithub, SiInstagram } from "react-icons/si";
 import { FiLinkedin } from "react-icons/fi";
 import { FaBloggerB } from "react-icons/fa";
+import { motion } from 'framer-motion'
 
 const Footer = () => {
     const date = new Date();
@@ -8,7 +9,9 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="absolute w-full -bottom-0">
+            <motion.footer 
+                transition={{ ease: "easeOut" }}
+                className="absolute w-full -bottom-0">
                 <div className="bg-red-500 dark:bg-red-800">
                     <div className="container max-w-4xl mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-gray-50 text-sm text-center sm:text-left">
@@ -61,7 +64,7 @@ const Footer = () => {
                         </span>
                     </div>
                 </div>
-            </footer>
+            </motion.footer>
         </>
     )
 }

@@ -7,6 +7,7 @@ export default function Content({feature}) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ ease: "easeOut" }}
         >
             <div className="my-1 text-gray-800 dark:text-gray-200 text-justify">
                 {feature.description}
