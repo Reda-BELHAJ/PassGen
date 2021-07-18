@@ -22,6 +22,6 @@ export const features = [
     {
         id: 4,
         title: '✨ Want to Contribute?',
-        description: 'Want to contribute to this repository? Fork the repository, make the changes, and send a pull request.'
+        description: 'Want to contribute to <a href="https://github.com/Reda-BELHAJ/PassGen" class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"> this repository</a>? Fork the repository, make the changes, and send a pull request.'
     },
 ]
