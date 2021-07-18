@@ -174,7 +174,7 @@ export default class Generated extends React.Component {
                                     <label className="inline-flex items-center">
                                         <input 
                                             type="checkbox" 
-                                            className="form-checkbox text-red-700 h-6 w-6" 
+                                            className="rounded form-checkbox text-red-700 h-6 w-6" 
                                             name="radio-sizes" 
                                             value={this.state.excludeSimilarCharacters} 
                                             onChange={()=>{
@@ -187,7 +187,7 @@ export default class Generated extends React.Component {
                                     <label className="inline-flex items-center">
                                         <input 
                                             type="checkbox" 
-                                            className="form-checkbox text-red-700 h-6 w-6" 
+                                            className="rounded form-checkbox text-red-700 h-6 w-6" 
                                             name="radio-sizes" 
                                             value={this.state.strict} 
                                             onChange={()=>{
