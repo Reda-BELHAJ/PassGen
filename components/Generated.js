@@ -21,7 +21,9 @@ export default class Generated extends React.Component {
                     
                     <CopyToClipboard  
                         text={this.state.value}
-                        onCopy={() => this.setState({copied: true})}>
+                        onCopy={() => {
+                            this.setState({copied: true})
+                            }}>
                             <button className="font-bold absolute w-5 h-10 text-gray-400 right-3 top-3 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-800" >
                                 <MdContentCopy />
                             </button>
@@ -32,7 +34,7 @@ export default class Generated extends React.Component {
                     <div className="text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100 text-left mb-4">
                         Customize your password
                     </div>
-                    <NymberInput value="" />
+                    <NymberInput />
                 </div>
             </>
         )

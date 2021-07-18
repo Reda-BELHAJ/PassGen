@@ -1,9 +1,7 @@
 import { useState } from 'react'
 
-const NymberInput = ({value}) => {
+const NymberInput = () => {
     const [count, setCount] = useState(10);
-
-    value = 10;
 
     const min = 1; 
     const max = 40; 
