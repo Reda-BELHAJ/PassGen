@@ -8,21 +8,19 @@ export default class Generated extends React.Component {
     defaultChecked = 16
     password = generator.generate({
         length: this.defaultChecked,
-        numbers: false
+        uppercase: true,
+        lowercase: true,
     });
-
-    uppercase = true
-    lowercase = true
-    numbers = false
-    symbols = false
 
     state = {
         value: this.password,
         length: this.defaultChecked,
-        uppercase: this.uppercase,
-        lowercase: this.lowercase,
-        numbers: this.numbers,
-        symbols: this.symbols,
+        uppercase: true,
+        lowercase: true,
+        numbers: false,
+        symbols: false,
+        excludeSimilarCharacters: false,
+        strict: false,
         copied: false,
       }; 
 
@@ -45,6 +43,8 @@ export default class Generated extends React.Component {
                 lowercase: this.state.lowercase,
                 symbols: this.state.symbols,
                 numbers: this.state.numbers,
+                excludeSimilarCharacters: this.state.excludeSimilarCharacters,
+                strict: this.state.strict,
             });
             this.setState({ value });
         } catch (error) {
@@ -172,20 +172,28 @@ export default class Generated extends React.Component {
                             <div className="font-semibold mt-2">
                                 <div className="mt-1">
                                     <label className="inline-flex items-center">
-                                        <input type="radio" className="form-radio text-red-700 h-6 w-6" name="radio-sizes" value="1"/>
+                                        <input 
+                                            type="checkbox" 
+                                            className="form-checkbox text-red-700 h-6 w-6" 
+                                            name="radio-sizes" 
+                                            value={this.state.excludeSimilarCharacters} 
+                                            onChange={()=>{
+                                                this.state.excludeSimilarCharacters = ! this.state.excludeSimilarCharacters
+                                            }}/>
                                         <span className="ml-3 text-lg">Exclude Similar Characters</span>
                                     </label>
                                 </div>
                                 <div className="mt-1">
                                     <label className="inline-flex items-center">
-                                        <input type="radio" className="form-radio text-red-700 h-6 w-6" name="radio-sizes" value="2"/>
+                                        <input 
+                                            type="checkbox" 
+                                            className="form-checkbox text-red-700 h-6 w-6" 
+                                            name="radio-sizes" 
+                                            value={this.state.strict} 
+                                            onChange={()=>{
+                                                this.state.strict = ! this.state.strict
+                                            }}/>
                                         <span className="ml-3 text-lg">Strict Mode</span>
-                                    </label>
-                                </div>
-                                <div className="mt-1">
-                                    <label className="inline-flex items-center">
-                                        <input type="radio" className="form-radio text-red-700 h-6 w-6" name="radio-sizes" value="3"/>
-                                        <span className="ml-3 text-lg">Option 3</span>
                                     </label>
                                 </div>
                             </div>
