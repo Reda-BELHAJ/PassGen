@@ -123,7 +123,7 @@ export default class Generated extends React.Component {
                                         className="rounded form-checkbox text-red-700 h-6 w-6" 
                                         value={this.state.uppercase} 
                                         onChange={()=>{
-                                            this.state.uppercase = ! this.state.uppercase
+                                            this.setState({uppercase:! this.state.uppercase})
                                         }}
                                         defaultChecked/>
                                     <span className="ml-2">UpperCase</span>
@@ -136,7 +136,7 @@ export default class Generated extends React.Component {
                                         className="rounded form-checkbox text-red-700 h-6 w-6" 
                                         value={this.state.lowercase} 
                                         onChange={()=>{
-                                            this.state.lowercase = ! this.state.lowercase
+                                            this.setState({lowercase:! this.state.lowercase})
                                         }}
                                         defaultChecked/>
                                     <span className="ml-2">LowerCase</span>
@@ -148,7 +148,7 @@ export default class Generated extends React.Component {
                                         type="checkbox" 
                                         className="rounded form-checkbox text-red-700 h-6 w-6" 
                                         onChange={()=>{
-                                            this.state.numbers = ! this.state.numbers
+                                            this.setState({numbers:! this.state.numbers})
                                         }}
                                         value={this.state.numbers}/>
                                     <span className="ml-2">Numbers</span>
@@ -160,7 +160,7 @@ export default class Generated extends React.Component {
                                         type="checkbox" 
                                         className="rounded form-checkbox text-red-700 h-6 w-6" 
                                         onChange={()=>{
-                                            this.state.symbols = ! this.state.symbols
+                                            this.setState({symbols:! this.state.symbols})
                                         }}
                                         value={this.state.symbols}/>
                                     <span className="ml-2">Symbols</span>
@@ -178,7 +178,7 @@ export default class Generated extends React.Component {
                                             name="radio-sizes" 
                                             value={this.state.excludeSimilarCharacters} 
                                             onChange={()=>{
-                                                this.state.excludeSimilarCharacters = ! this.state.excludeSimilarCharacters
+                                                this.setState({excludeSimilarCharacters:! this.state.excludeSimilarCharacters})
                                             }}/>
                                         <span className="ml-3 text-lg">Exclude Similar Characters</span>
                                     </label>
@@ -191,7 +191,7 @@ export default class Generated extends React.Component {
                                             name="radio-sizes" 
                                             value={this.state.strict} 
                                             onChange={()=>{
-                                                this.state.strict = ! this.state.strict
+                                                this.setState({strict:! this.state.strict})
                                             }}/>
                                         <span className="ml-3 text-lg">Strict Mode</span>
                                     </label>
