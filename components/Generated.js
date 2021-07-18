@@ -1,6 +1,7 @@
 import React from 'react';
 import {MdContentCopy} from 'react-icons/md'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+var generator = require('generate-password');
 
 export default class Generated extends React.Component {
     password = '5h4cDKzz4wwZv@ba'
@@ -23,8 +24,14 @@ export default class Generated extends React.Component {
             this.setState({ length });
         }
       }
+    
+    newPassword = generator.generate({
+        length: this.state.length,
+        numbers: true
+    });
 
     render() {
+        console.log(this.password)
         return (
             <>
                 <div className="md:grid md:grid-cols-6 md:gap-4">
