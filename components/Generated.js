@@ -53,6 +53,7 @@ export default class Generated extends React.Component {
     }
 
     render() {
+        
         return (
             <>
                 <form onSubmit={this.handleFormSubmit}>
