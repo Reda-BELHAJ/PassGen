@@ -19,7 +19,7 @@ Get the code by either cloning this repository using git
 git clone https://github.com/sanity-io/example-frontend-next-js.git
 ```
 
-... or [downloading source code](https://github.com/sanity-io/example-frontend-next-js/archive/master.zip) code as a zip archive.
+... or [downloading source code](https://github.com/Reda-BELHAJ/PassGen/archive/master.zip) code as a zip archive.
 
 Once downloaded, open the terminal in the project directory, and install dependencies with:
 
